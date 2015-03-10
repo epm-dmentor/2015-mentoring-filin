@@ -1,0 +1,7 @@
+obj/
+bin/
+packages/
+*.vsp
+*.psess
+*.suo
+*.exe
