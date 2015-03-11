@@ -11,12 +11,17 @@ namespace NetMentoring
 
             Console.WriteLine("Finished");
             Console.ReadKey();
+            
         }
 
         private static void WriteLog(string str)
         {
-            var logger = new MemoryStreamLogger();
-            logger.Log(str);
+            using (var logger = new MemoryStreamLogger())
+            {
+                logger.Log(str);
+            }
         }
+
+
     }
 }
