@@ -22,13 +22,7 @@ namespace Convestudo.Unmanaged
 
             //ThrowLastWin32Err();
         }
-
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }
-
+        
         public void Write(string str)
         {
             Byte[] bytes = GetBytes(str);
@@ -74,12 +68,6 @@ namespace Convestudo.Unmanaged
         internal static extern bool WriteFile(IntPtr hFile, Byte[] aBuffer, UInt32 cbToWrite,
             ref UInt32 cbThatWereWritten, IntPtr pOverlapped);
 
-        private void ThrowLastWin32Err()
-        {
-            Marshal.ThrowExceptionForHR(
-                Marshal.GetHRForLastWin32Error());
-        }
-
         /// <summary>
         ///     Converts string to byte array
         /// </summary>
@@ -89,6 +77,9 @@ namespace Convestudo.Unmanaged
         {
             return Encoding.Unicode.GetBytes(str);
         }
+        
+        [DllImport("kernel32.dll", SetLastError = true)]
+        internal static extern bool CloseHandle(IntPtr hObject);
 
         protected virtual void Dispose(bool disposing)
         {
@@ -99,10 +90,20 @@ namespace Convestudo.Unmanaged
                     CloseHandle(_fileHandle);
                 }
             }
+           
             _disposed = true;
         }
 
-        [DllImport("kernel32.dll", SetLastError = true)]
-        internal static extern bool CloseHandle(IntPtr hObject);
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        ~FileWriter()
+        {
+            Dispose(false);
+        }
+
     }
 }

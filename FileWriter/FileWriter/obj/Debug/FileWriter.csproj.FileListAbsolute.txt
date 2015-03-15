@@ -9,3 +9,4 @@ C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\FileWrite
 C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\FileWriter\FileWriter\bin\Debug\FileWriter.pdb
 C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\FileWriter\FileWriter\obj\Debug\FileWriter.exe
 C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\FileWriter\FileWriter\obj\Debug\FileWriter.pdb
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\FileWriter\FileWriter\obj\Debug\FileWriter.csprojResolveAssemblyReference.cache

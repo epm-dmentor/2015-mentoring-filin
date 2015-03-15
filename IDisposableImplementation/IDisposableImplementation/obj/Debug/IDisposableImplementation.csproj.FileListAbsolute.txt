@@ -9,4 +9,3 @@ C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\IDisposab
 C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\IDisposableImplementation\IDisposableImplementation\obj\Debug\IDisposableImplementation.pdb
 C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\IDisposableImplementation\IDisposableImplementation\bin\Debug\IDisposableImplementation.exe
 C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\IDisposableImplementation\IDisposableImplementation\bin\Debug\IDisposableImplementation.pdb
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\IDisposableImplementation\IDisposableImplementation\obj\Debug\IDisposableImplementation.csprojResolveAssemblyReference.cache
