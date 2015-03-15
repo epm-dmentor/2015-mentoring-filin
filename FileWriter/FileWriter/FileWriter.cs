@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Convestudo.Unmanaged
 {
-    public class FileWriter : IFileWriter, IDisposable
+    public class FileWriter : IFileWriter
     {
         private readonly IntPtr _fileHandle;
         private bool _disposed;
