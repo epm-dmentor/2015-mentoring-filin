@@ -85,6 +85,8 @@ namespace Convestudo.Unmanaged
         {
             if (!_disposed)
             {
+                //IT: you want to say, that if we disposing resources from finalizer we do not need to close handle?
+                //IT: what should be inside shuch kind of block and why?
                 if (disposing)
                 {
                     CloseHandle(_fileHandle);

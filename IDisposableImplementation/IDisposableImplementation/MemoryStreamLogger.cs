@@ -24,6 +24,8 @@ namespace NetMentoring
         {
             if (!_disposed)
             {
+                //IT: do not change anything, just anwer the question - why the code you writen inside block if (disposing) ...
+                //IT: what will happen if we remove if and run code in any case?
                 if (disposing)
                 {
                     if (_streamWriter != null)
