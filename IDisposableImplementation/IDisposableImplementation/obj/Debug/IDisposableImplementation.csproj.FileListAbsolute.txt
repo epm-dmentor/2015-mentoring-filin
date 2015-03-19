@@ -12,3 +12,6 @@ C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\IDisposab
 E:\Git\mentoring\mentoring-filin\IDisposableImplementation\IDisposableImplementation\bin\Debug\IDisposableImplementation.exe.config
 E:\Git\mentoring\mentoring-filin\IDisposableImplementation\IDisposableImplementation\obj\Debug\IDisposableImplementation.exe
 E:\Git\mentoring\mentoring-filin\IDisposableImplementation\IDisposableImplementation\obj\Debug\IDisposableImplementation.pdb
+D:\Mentoring\GitHub\mentoring-filin\IDisposableImplementation\IDisposableImplementation\bin\Debug\IDisposableImplementation.exe.config
+D:\Mentoring\GitHub\mentoring-filin\IDisposableImplementation\IDisposableImplementation\obj\Debug\IDisposableImplementation.exe
+D:\Mentoring\GitHub\mentoring-filin\IDisposableImplementation\IDisposableImplementation\obj\Debug\IDisposableImplementation.pdb
