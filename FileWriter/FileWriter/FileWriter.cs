@@ -1,4 +1,4 @@
-﻿using System;
+?using System;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -87,9 +87,13 @@ namespace Convestudo.Unmanaged
             {
                 //IT: you want to say, that if we disposing resources from finalizer we do not need to close handle?
                 //IT: what should be inside shuch kind of block and why?
+                
+                ////According to dispose patern we should free any unmanaged objects here, so code should look like:
+                CloseHandle(_fileHandle);
+                
                 if (disposing)
                 {
-                    CloseHandle(_fileHandle);
+                     //Here we free managed objects
                 }
             }
            
