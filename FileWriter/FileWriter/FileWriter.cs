@@ -1,4 +1,4 @@
-?using System;
+using System;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -11,6 +11,8 @@ namespace Convestudo.Unmanaged
 
         public FileWriter(string fileName)
         {
+            //BK:I would recomend to consider some another place for create file. PLease think of some. What if user will create FileWriter, but won't write anything?
+            //BK: Also what if user will try to create few file writer instances for the same file? You need to provide some good logic for thta case.
             _fileHandle = CreateFile(
                 fileName,
                 DesiredAccess.Write,
@@ -25,6 +27,8 @@ namespace Convestudo.Unmanaged
         
         public void Write(string str)
         {
+            //BK: What if user will call dispose and then call this method?
+            //BK: Get bytes is used only once and it is very small. Do you really need separate method for that?
             Byte[] bytes = GetBytes(str);
 
             uint bytesWritten = 0;
@@ -34,9 +38,13 @@ namespace Convestudo.Unmanaged
 
         public void WriteLine(string str)
         {
+            //BK: What if user will call dispose and then call this method?
+            //BK: String format is excessive here. Please have a look at it's code implementation - this is overhead. Just use string concatamations in such cases
             Write(String.Format("{0}{1}", str, Environment.NewLine));
         }
 
+
+        //Try to use #region and #endregion, this will make your code more readable
         /// <summary>
         ///     Creates file
         ///     <see cref="http://msdn.microsoft.com/en-us/library/windows/desktop/aa363858(v=vs.85).aspx" />
@@ -90,7 +98,7 @@ namespace Convestudo.Unmanaged
                 
                 ////According to dispose patern we should free any unmanaged objects here, so code should look like:
                 CloseHandle(_fileHandle);
-                
+                //BK: You don't have managed resources here. So remove that
                 if (disposing)
                 {
                      //Here we free managed objects
