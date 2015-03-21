@@ -1,7 +1,0 @@
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\IDisposableImplementation\IDisposableImplementation\bin\Release\IDisposableImplementation.exe.config
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\IDisposableImplementation\IDisposableImplementation\bin\Release\IDisposableImplementation.exe
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\IDisposableImplementation\IDisposableImplementation\bin\Release\IDisposableImplementation.pdb
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\IDisposableImplementation\IDisposableImplementation\bin\Release\IDisposableImplementation.exe.CodeAnalysisLog.xml
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\IDisposableImplementation\IDisposableImplementation\bin\Release\IDisposableImplementation.exe.lastcodeanalysissucceeded
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\IDisposableImplementation\IDisposableImplementation\obj\Release\IDisposableImplementation.exe
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\IDisposableImplementation\IDisposableImplementation\obj\Release\IDisposableImplementation.pdb

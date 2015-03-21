@@ -1,7 +1,0 @@
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\FileWriter\FileWriter\bin\Release\FileWriter.exe.config
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\FileWriter\FileWriter\bin\Release\FileWriter.exe
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\FileWriter\FileWriter\bin\Release\FileWriter.pdb
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\FileWriter\FileWriter\bin\Release\FileWriter.exe.CodeAnalysisLog.xml
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\FileWriter\FileWriter\bin\Release\FileWriter.exe.lastcodeanalysissucceeded
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\FileWriter\FileWriter\obj\Release\FileWriter.exe
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\FileWriter\FileWriter\obj\Release\FileWriter.pdb
