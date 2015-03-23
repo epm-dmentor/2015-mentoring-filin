@@ -1,6 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 
 namespace Epam.NetMentoring.Unmanaged
 {
@@ -8,20 +9,36 @@ namespace Epam.NetMentoring.Unmanaged
     {
         private IntPtr _fileHandle;
         private bool _disposed;
+        private readonly string _fileName;
+        private static readonly Mutex Mutex = new Mutex();
 
         public FileWriter(string fileName)
         {
+            
             //BK:I would recomend to consider some another place for create file. PLease think of some. What if user will create FileWriter, but won't write anything?
+            //AF: I allocated it in separate method
             //BK: Also what if user will try to create few file writer instances for the same file? You need to provide some good logic for thta case.
             
+
+            _fileName = fileName;
+        }
+
+        private IntPtr CreateFile()
+        {
+            Mutex.WaitOne();
+
             _fileHandle = CreateFile(
-              fileName,
+              _fileName,
               DesiredAccess.Write,
               ShareMode.Write,
               IntPtr.Zero,
               CreationDisposition.CreateNew,
               FlagsAndAttributes.Normal,
               IntPtr.Zero);
+
+            Mutex.ReleaseMutex();
+
+            return _fileHandle;
         }
 
         public void Write(string str)
@@ -33,7 +50,7 @@ namespace Epam.NetMentoring.Unmanaged
             Byte[] bytes = Encoding.Unicode.GetBytes(str);
 
             uint bytesWritten = 0;
-            WriteFile(_fileHandle, bytes, (uint) bytes.Length, ref bytesWritten, IntPtr.Zero);
+            WriteFile(CreateFile(), bytes, (uint)bytes.Length, ref bytesWritten, IntPtr.Zero);
         }
 
         public void WriteLine(string str)

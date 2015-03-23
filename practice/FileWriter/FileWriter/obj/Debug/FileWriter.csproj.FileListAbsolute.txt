@@ -24,4 +24,3 @@ C:\GitHub\mentoring\practice\FileWriter\FileWriter\obj\Debug\FileWriter.exe
 C:\GitHub\mentoring\practice\FileWriter\FileWriter\obj\Debug\FileWriter.pdb
 C:\GitHub\mentoring\practice\FileWriter\FileWriter\bin\Debug\FileWriter.exe
 C:\GitHub\mentoring\practice\FileWriter\FileWriter\bin\Debug\FileWriter.pdb
-C:\GitHub\mentoring\practice\FileWriter\FileWriter\obj\Debug\FileWriter.csprojResolveAssemblyReference.cache

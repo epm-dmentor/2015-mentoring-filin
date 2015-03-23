@@ -11,10 +11,10 @@ namespace Epam.NetMentoring.Unmanaged
             var fileWrite = new FileWriter("log.txt");
             var fileWrit = new FileWriter("log.txt");
 
-            fileWrite.Write("First test string");
-            fileWrit.Write("First test string");
-            fileWrite.Write("First test string");
-            fileWriter.Write("First test string");
+            fileWrite.Write("First test string2");
+            fileWrit.Write("First test string3");
+            fileWrite.Write("First test string5");
+            fileWriter.Write("First test string8");
 
             Console.ReadKey();
         }
