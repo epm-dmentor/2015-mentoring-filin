@@ -1,0 +1,5 @@
+C:\GitHub\mentoring\practice\ZooInDanger\ZooInDanger\bin\Debug\ZooInDanger.exe.config
+C:\GitHub\mentoring\practice\ZooInDanger\ZooInDanger\bin\Debug\ZooInDanger.exe
+C:\GitHub\mentoring\practice\ZooInDanger\ZooInDanger\bin\Debug\ZooInDanger.pdb
+C:\GitHub\mentoring\practice\ZooInDanger\ZooInDanger\obj\Debug\ZooInDanger.exe
+C:\GitHub\mentoring\practice\ZooInDanger\ZooInDanger\obj\Debug\ZooInDanger.pdb

@@ -6,43 +6,85 @@ namespace Epam.NetMentoring.Unmanaged
 {
     public class FileWriter : IFileWriter
     {
-        private readonly IntPtr _fileHandle;
+        private IntPtr _fileHandle;
         private bool _disposed;
 
         public FileWriter(string fileName)
         {
             //BK:I would recomend to consider some another place for create file. PLease think of some. What if user will create FileWriter, but won't write anything?
             //BK: Also what if user will try to create few file writer instances for the same file? You need to provide some good logic for thta case.
+            
             _fileHandle = CreateFile(
-                fileName,
-                DesiredAccess.Write,
-                ShareMode.Write,
-                IntPtr.Zero,
-                CreationDisposition.CreateNew,
-                FlagsAndAttributes.Normal,
-                IntPtr.Zero);
-
-            //ThrowLastWin32Err();
+              fileName,
+              DesiredAccess.Write,
+              ShareMode.Write,
+              IntPtr.Zero,
+              CreationDisposition.CreateNew,
+              FlagsAndAttributes.Normal,
+              IntPtr.Zero);
         }
-        
+
         public void Write(string str)
         {
             //BK: What if user will call dispose and then call this method?
+            //AF: ObjectDisposedException
             //BK: Get bytes is used only once and it is very small. Do you really need separate method for that?
-            Byte[] bytes = GetBytes(str);
+            //AF: Originally it contained more lines :) Corrected.
+            Byte[] bytes = Encoding.Unicode.GetBytes(str);
 
             uint bytesWritten = 0;
             WriteFile(_fileHandle, bytes, (uint) bytes.Length, ref bytesWritten, IntPtr.Zero);
-            //throw new System.NotImplementedException();
         }
 
         public void WriteLine(string str)
         {
             //BK: What if user will call dispose and then call this method?
+            //AF: ObjectDisposedException
             //BK: String format is excessive here. Please have a look at it's code implementation - this is overhead. Just use string concatamations in such cases
-            Write(String.Format("{0}{1}", str, Environment.NewLine));
+            //AF: Thanks. Corrected.
+            Write(str + Environment.NewLine);
         }
 
+
+        //protected virtual void Dispose(bool disposing)
+        //{
+        //    if (!_disposed)
+        //    {
+        //        //IT: you want to say, that if we disposing resources from finalizer we do not need to close handle?
+        //        //IT: what should be inside shuch kind of block and why?
+
+        //        ////According to dispose patern we should free any unmanaged objects here, so code should look like:
+        //        CloseHandle(_fileHandle);
+        //        //BK: You don't have managed resources here. So remove that
+        //        if (disposing)
+        //        {
+        //            //Here we free managed objects
+        //        }
+        //    }
+
+        //    _disposed = true;
+        //}
+
+        public void CleanUpUnmanagedResources()
+        {
+            if (_disposed) return;
+            CloseHandle(_fileHandle);
+            _fileHandle = IntPtr.Zero;
+            _disposed = true;
+        }
+
+        public void Dispose()
+        {
+            CleanUpUnmanagedResources();
+            GC.SuppressFinalize(this);
+        }
+
+        ~FileWriter()
+        {
+           CleanUpUnmanagedResources();
+        }
+
+        #region Import unmanaged resources
 
         //Try to use #region and #endregion, this will make your code more readable
         /// <summary>
@@ -62,7 +104,7 @@ namespace Epam.NetMentoring.Unmanaged
             IntPtr lpSecurityAttributes, CreationDisposition dwCreationDisposition,
             FlagsAndAttributes dwFlagsAndAttributes, IntPtr hTemplateFile);
 
-       
+
         /// <summary>
         ///     Writes data into a file
         /// </summary>
@@ -76,48 +118,10 @@ namespace Epam.NetMentoring.Unmanaged
         internal static extern bool WriteFile(IntPtr hFile, Byte[] aBuffer, UInt32 cbToWrite,
             ref UInt32 cbThatWereWritten, IntPtr pOverlapped);
 
-        /// <summary>
-        ///     Converts string to byte array
-        /// </summary>
-        /// <param name="str"></param>
-        /// <returns></returns>
-        private static byte[] GetBytes(string str)
-        {
-            return Encoding.Unicode.GetBytes(str);
-        }
-        
+
         [DllImport("kernel32.dll", SetLastError = true)]
         internal static extern bool CloseHandle(IntPtr hObject);
 
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!_disposed)
-            {
-                //IT: you want to say, that if we disposing resources from finalizer we do not need to close handle?
-                //IT: what should be inside shuch kind of block and why?
-                
-                ////According to dispose patern we should free any unmanaged objects here, so code should look like:
-                CloseHandle(_fileHandle);
-                //BK: You don't have managed resources here. So remove that
-                if (disposing)
-                {
-                     //Here we free managed objects
-                }
-            }
-           
-            _disposed = true;
-        }
-
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }
-
-        ~FileWriter()
-        {
-            Dispose(false);
-        }
-
+        #endregion
     }
 }
