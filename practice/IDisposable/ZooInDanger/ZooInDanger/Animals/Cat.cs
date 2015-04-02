@@ -25,7 +25,7 @@ namespace Epam.NetMentoring.Zoo.Animals
         ~Cat()
         {
             Logger.LogYellow("Finalizing cat!");
-
+            //BK: What happens if A is a base class for B, we initialize A a = new B(); and a then garbage collected? Think about that and try to think what happens in context of animal and cat
             //Releasea object only in case troops number > 100
             while (Zoo.Troops > 200)
             {

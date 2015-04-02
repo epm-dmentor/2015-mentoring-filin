@@ -171,6 +171,7 @@ namespace Epam.NetMentoring.Zoo.Animals
 
         ~Animal()
         {
+            //BK: What is your fix for? Why do you think it was fixed?
             while (Zoo.Troops > 200)
             {
                 _isAlive = false;
