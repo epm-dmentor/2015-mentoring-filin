@@ -17,6 +17,10 @@ namespace Self_Recovering
             for (int i = 0; i < count; i++)
             {
                 //BK: What is this flag can be used for?
+                //AF: True is long and false is short weak references
+                //Short – Once the object is reclaimed by garbage collection, the reference is set to null. 
+                //Long – If the object has a finalizer AND the reference is created with the correct options, 
+                //then the reference will point to the object until the finalizer completes.
                 _cache.Add(i, new WeakReference(new Data(i), false));
             }
         }
