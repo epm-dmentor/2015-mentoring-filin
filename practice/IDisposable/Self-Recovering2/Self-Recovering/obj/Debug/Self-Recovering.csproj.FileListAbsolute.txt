@@ -1,0 +1,6 @@
+C:\GitHub\mentoring\practice\IDisposable\Self-Recovering2\Self-Recovering\bin\Debug\Self-Recovering.exe.config
+C:\GitHub\mentoring\practice\IDisposable\Self-Recovering2\Self-Recovering\obj\Debug\Self-Recovering.csprojResolveAssemblyReference.cache
+C:\GitHub\mentoring\practice\IDisposable\Self-Recovering2\Self-Recovering\bin\Debug\Self-Recovering.exe
+C:\GitHub\mentoring\practice\IDisposable\Self-Recovering2\Self-Recovering\bin\Debug\Self-Recovering.pdb
+C:\GitHub\mentoring\practice\IDisposable\Self-Recovering2\Self-Recovering\obj\Debug\Self-Recovering.exe
+C:\GitHub\mentoring\practice\IDisposable\Self-Recovering2\Self-Recovering\obj\Debug\Self-Recovering.pdb
