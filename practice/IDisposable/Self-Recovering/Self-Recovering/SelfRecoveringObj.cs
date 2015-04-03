@@ -16,6 +16,7 @@ namespace Self_Recovering
             //Add objects with a short weak reference to the cache. 
             for (int i = 0; i < count; i++)
             {
+                //BK: What is this flag can be used for?
                 _cache.Add(i, new WeakReference(new Data(i), false));
             }
         }
