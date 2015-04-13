@@ -48,11 +48,9 @@ namespace Linked_list
             return tmp;
         }
 
-        public int Add(object value)
+        public void Add(object value)
         {
             AddAt(Count, value);
-
-            return (Count - 1);
         }
 
         public void AddAt(int index, object value)
