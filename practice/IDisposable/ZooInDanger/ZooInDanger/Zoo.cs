@@ -144,7 +144,7 @@ namespace Epam.NetMentoring.Zoo
                     Console.WriteLine("Running CG collect");
                     Console.Beep();
                     GC.Collect();
-                    Thread.Sleep(200);
+                    Thread.Sleep(3000);
                     Console.ResetColor();
                 }
             }

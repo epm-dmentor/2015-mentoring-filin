@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Collections;
 
 namespace Linked_list
 {
-    public class Linked_List
+    public class Linked_List: IEnumerable
     {
         private readonly Node _head;
 
@@ -105,8 +106,7 @@ namespace Linked_list
         private Node FindNodeAt(int index)
         {
             if (index < 0 || Count <= index)
-                throw new IndexOutOfRangeException("Attempt to access index " + index + ", but the total count is " +
-                                                   Count + ".");
+                throw new IndexOutOfRangeException("Index is out of range");
 
             var node = _head;
 
@@ -122,6 +122,14 @@ namespace Linked_list
             }
 
             return node;
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            for (int i = 0; i < Count; i++)
+            {
+                yield return FindNodeAt(i).Current;
+            }
         }
     }
 }

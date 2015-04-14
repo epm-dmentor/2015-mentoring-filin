@@ -11,6 +11,33 @@ namespace Unit_Test_Linked_List
         readonly Linked_List _list = new Linked_List();
 
         [TestMethod]
+        public void ForEachAndCount()
+        {
+            for (int i = 1; i < 4; i++)
+            {
+                _list.Add(i);
+            }
+
+            foreach (var node in _list)
+            {
+                Assert.AreEqual(node,node);
+            }
+
+            for (int i = 0; i < _list.Count; i++)
+            {
+                Assert.AreEqual(_list[i], ++i);
+
+            }
+
+            Assert.AreEqual(_list[0], 1);
+            Assert.AreEqual(_list[1], 2);
+            Assert.AreEqual(_list[2], 3);
+
+            Assert.IsTrue(_list.Count == 3);
+
+        }
+
+        [TestMethod]
         public void AddandCount()
         {
             for (int i = 1; i < 4; i++)
@@ -50,12 +77,10 @@ namespace Unit_Test_Linked_List
 
             _list.Remove(2);
 
-            for (int i = 0; i < _list.Count; i++)
+            foreach (object node in _list)
             {
-                Assert.IsTrue(_list[i] != (object) 2);
+                Assert.IsTrue(node != (object) 2);
             }
-            
-            
         }
 
         [TestMethod]

@@ -1,13 +1,14 @@
 ﻿#region
 
 using System;
+using System.Runtime.ConstrainedExecution;
 using System.Threading;
 
 #endregion
 
 namespace Epam.NetMentoring.Zoo.Animals
 {
-    public class Animal : IAnimal, ITickListener
+    public class Animal : CriticalFinalizerObject, IAnimal, ITickListener
     {
         //statuses
 
@@ -172,12 +173,11 @@ namespace Epam.NetMentoring.Zoo.Animals
         ~Animal()
         {
             //BK: What is your fix for? Why do you think it was fixed?
-            while (Zoo.Troops > 200)
-            {
+            
                 _isAlive = false;
                 Logger.Log("Ruining animal: {0}, ID = {1}", GetType().Name, _id);
                 Interlocked.Decrement(ref Zoo.Troops);
-            }
+            
 
             Logger.LogYellow("Ruining animal: {0} finished, ID= {1}", GetType().Name, _id);
         }
