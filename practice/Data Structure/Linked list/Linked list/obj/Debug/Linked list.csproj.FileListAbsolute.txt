@@ -1,0 +1,6 @@
+C:\GitHub\mentoring\practice\Data Structure\Linked list\Linked list\bin\Debug\Linked list.exe.config
+C:\GitHub\mentoring\practice\Data Structure\Linked list\Linked list\bin\Debug\Linked list.exe
+C:\GitHub\mentoring\practice\Data Structure\Linked list\Linked list\bin\Debug\Linked list.pdb
+C:\GitHub\mentoring\practice\Data Structure\Linked list\Linked list\obj\Debug\Linked list.csprojResolveAssemblyReference.cache
+C:\GitHub\mentoring\practice\Data Structure\Linked list\Linked list\obj\Debug\Linked list.exe
+C:\GitHub\mentoring\practice\Data Structure\Linked list\Linked list\obj\Debug\Linked list.pdb
