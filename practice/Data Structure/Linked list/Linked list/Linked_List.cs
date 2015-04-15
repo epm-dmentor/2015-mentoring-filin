@@ -128,7 +128,7 @@ namespace Linked_list
         {
             for (int i = 0; i < Count; i++)
             {
-                yield return FindNodeAt(i).Current;
+                yield return this[i];
             }
         }
     }
