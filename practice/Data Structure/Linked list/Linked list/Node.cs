@@ -1,16 +1,17 @@
-﻿namespace Linked_list
+﻿namespace Epam.NetMentoring.DataStructures.LinkedList
 {
     internal class Node
     {
         //BK:I think currentNode should be replaced with value
-        public Node(object currentNode, Node nextNode, Node previousNode)
+        //AF:Agree. Corrected
+        public Node(object value, Node nextNode, Node previousNode)
         {
-            Current = currentNode;
+            Value = value;
             Next = nextNode;
             Previous = previousNode;
         }
 
-        public object Current { get; set; }
+        public object Value { get; set; }
         public Node Next { get; set; }
         public Node Previous { get; set; }
     }

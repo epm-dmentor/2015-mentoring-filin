@@ -1,14 +1,11 @@
-﻿using System;
-using System.Diagnostics;
-using Linked_list;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Unit_Test_Linked_List
+namespace Epam.NetMentoring.DataStructures.LinkedList
 {
     [TestClass]
     public class UnitTest
     {
-        readonly Linked_List _list = new Linked_List();
+        readonly LinkedList _list = new LinkedList();
 
         [TestMethod]
         public void ForEachAndCount()

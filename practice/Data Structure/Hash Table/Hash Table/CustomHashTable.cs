@@ -1,37 +1,41 @@
 ﻿#region
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
 #endregion
 
 //BK: What a strange namespace :) Please use conventional namespaces
-namespace Hash_Table
+//AF: Corrected ;)
+namespace Epam.NetMentoring.DataStructures.HashTable
 {
     //BK:Why can't you name that simply HashTable?
-    public class CustomHashTable : IHashTable
+    //AF: Corrected
+    public class HashTable : IHashTable
     {
-        private readonly LinkedList<Bucket>[] _items;
-        private readonly int _size;
+        private readonly LinkedList<bucket>[] items;
+        private readonly int size;
 
-        public CustomHashTable(int size)
+        public HashTable(int size)
         {
-            _size = size;
-            _items = new LinkedList<Bucket>[size];
+            this.size = size;
+            items = new LinkedList<bucket>[size];
         }
 
         public void Add(object key, object value)
         {
             if (Contains(key)) throw new Exception("Key already exist");
 
-            int index = GetHashCode(key);
-            LinkedList<Bucket> linkedList = Buckets(index);
-            Bucket item = new Bucket
+            int bucketNumber = GetBucketNumberHashCode(key);
+            LinkedList<bucket> linkedList = buckets(bucketNumber);
+            bucket item = new bucket
             {
                 Key = key,
                 Value = value
             };
+
             linkedList.AddLast(item);
         }
 
@@ -60,73 +64,81 @@ namespace Hash_Table
 
         public bool Contains(object key)
         {
-            int index = GetHashCode(key);
-            var linkedList = Buckets(index);
+            int bucketNumber = GetBucketNumberHashCode(key);
+            var linkedList = buckets(bucketNumber);
             return linkedList.Any(item => item.Key.Equals(key));
         }
 
         public bool TryGet(object key, out object value)
         {
-            int index = GetHashCode(key);
-            LinkedList<Bucket> linkedList = Buckets(index);
+            int bucketNumber = GetBucketNumberHashCode(key);
+            LinkedList<bucket> linkedList = buckets(bucketNumber);
+
             if (Contains(key))
             {
                 value = linkedList.SingleOrDefault(item => item.Key.Equals(key)).Value;
                 return true;
             }
+
             value = null;
             return false;
         }
 
         public void Remove(object key)
         {
-            int index = GetHashCode(key);
-            LinkedList<Bucket> linkedList = Buckets(index);
-            bool itemFound = false;
-            //BK: Why do you initialize new Bucket here?
-            Bucket foundItem = new Bucket();
             //BK:Why do you need all that logic? This should be done in Linked LIst implementation!
-            foreach (Bucket item in linkedList)
-            {
-                if (item.Key.Equals(key))
-                {
-                    itemFound = true;
-                    foundItem = item;
-                    //BK: Break here???
-                }
-            }
-            if (itemFound)
-            {
-                linkedList.Remove(foundItem);
-            }
+            //AF:Improved logic
+            int bucketNumber = GetBucketNumberHashCode(key);
+            buckets(bucketNumber).Clear();
+
+
+            //bool itemFound = false;
+            ////BK: Why do you initialize new Bucket here?
+            //Bucket foundItem = new Bucket();
+            ////BK:Why do you need all that logic? This should be done in Linked LIst implementation!
+            //foreach (Bucket item in linkedList)
+            //{
+            //    if (item.Key.Equals(key))
+            //    {
+            //        itemFound = true;
+            //        foundItem = item;
+            //        //BK: Break here???
+            //    }
+            //}
+            //if (itemFound)
+            //{
+            //    linkedList.Remove(foundItem);
+            //}
         }
 
-        private int GetHashCode(object key)
+        private int GetBucketNumberHashCode(object key)
         {
-            int hash = 17*key.GetHashCode()%_size;
+            int hash = 17 * key.GetHashCode() % size;
             return Math.Abs(hash);
         }
 
-        private Bucket Find(object key)
+        private bucket Find(object key)
         {
-            int index = GetHashCode(key);
-            LinkedList<Bucket> linkedList = Buckets(index);
+            int bucketNumber = GetBucketNumberHashCode(key);
+            LinkedList<bucket> linkedList = buckets(bucketNumber);
             return linkedList.SingleOrDefault(item => item.Key.Equals(key));
         }
 
         //BK: This method doesn't look very explanatory
-        private LinkedList<Bucket> Buckets(int index)
+        //AF: Changed local var name, should be clear
+        private LinkedList<bucket> buckets(int bucketNumber)
         {
-            LinkedList<Bucket> linkedList = _items[index];
+            LinkedList<bucket> linkedList = items[bucketNumber];
+
             if (linkedList == null)
-            {
-                linkedList = new LinkedList<Bucket>();
-                _items[index] = linkedList;
-            }
+                return items[bucketNumber] = new LinkedList<bucket>();
+
             return linkedList;
         }
+
         //BK: Why have you decided to use structure not class here?
-        private struct Bucket
+        //AF: Video lessons influence and by the way Microsoft also uses "struct" to store hash table data ;)
+        private class bucket
         {
             public object Key { get; set; }
             public object Value { get; set; }

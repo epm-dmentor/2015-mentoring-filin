@@ -1,19 +1,21 @@
 ﻿using System;
 using System.Collections;
 
-namespace Linked_list
+namespace Epam.NetMentoring.DataStructures.LinkedList
 {
     //BK: Never use underscores in a naming. Why do you use that here?
-    public class Linked_List: IEnumerable
+    //AF: Yes, was a mess with naming ;). I've corrected it.
+    public class LinkedList: IEnumerable
     {
         //BK: I would strongly recommend not to use underscrores in the code too
-        private readonly Node _head;
+        //AF: Corrected
+        private readonly Node head;
 
-        public Linked_List()
+        public LinkedList()
         {
-            _head = new Node(null, null, null);
-            _head.Next = _head;
-            _head.Previous = _head;
+            head = new Node(null, null, null);
+            head.Next = head;
+            head.Previous = head;
             Count = 0;
         }
 
@@ -21,14 +23,14 @@ namespace Linked_list
 
         public object this[int index]
         {
-            get { return FindNodeAt(index).Current; }
-            set { FindNodeAt(index).Current = value; }
+            get { return FindNodeAt(index).Value; }
+            set { FindNodeAt(index).Value = value; }
         }
 
         public void Clear()
         {
-            _head.Next = _head;
-            _head.Previous = _head;
+            head.Next = head;
+            head.Previous = head;
 
             Count = 0;
         }
@@ -37,7 +39,7 @@ namespace Linked_list
         {
             var tmp = string.Empty;
 
-            if (_head == null)
+            if (head == null)
             {
                 tmp = "Linked List is empty";
                 return tmp;
@@ -61,15 +63,18 @@ namespace Linked_list
             Node node;
 
             //BK: Put that if statement into findNodeAt better
+            //AF: Not sure how you see this works. Let's duscuss that.
+
             if (index == Count)
-                node = new Node(value, _head, _head.Previous);
+            {
+                node = new Node(value, head, head.Previous);
+            }
             else
             {
                 var tmp = FindNodeAt(index);
 
                 node = new Node(value, tmp, tmp.Previous);
             }
-            
             node.Previous.Next = node;
             node.Next.Previous = node;
 
@@ -79,18 +84,14 @@ namespace Linked_list
         public void Remove(object value)
         {
             //BK: Why do you need if else statement here? Use == for example and no "if else"
-            if (value == null)
-            {
-                for (var node = _head.Next; node != _head; node = node.Next)
-                    if (node.Current == null)
+            //AF: Yes, it was redundancy
+                for (var node = head.Next; node != head; node = node.Next)
+                {
+                    if (node.Value == null)
+                    {
                         Remove(node);
-            }
-            else
-            {
-                for (var node = _head.Next; node != _head; node = node.Next)
-                    if (value.Equals(node.Current))
-                        Remove(node);
-            }
+                    }
+                }
         }
 
         public void RemoveAt(int index)
@@ -100,7 +101,7 @@ namespace Linked_list
 
         private void Remove(Node value)
         {
-            if (value == _head) return;
+            if (value == head) return;
             value.Previous.Next = value.Next;
             value.Next.Previous = value.Previous;
 
@@ -112,17 +113,21 @@ namespace Linked_list
             if (index < 0 || Count <= index)
                 throw new IndexOutOfRangeException("Index is out of range");
 
-            var node = _head;
+            var node = head;
 
             if (index < (Count/2))
             {
                 for (var i = 0; i <= index; i++)
+                {
                     node = node.Next;
+                }
             }
             else
             {
                 for (var i = Count; i > index; i--)
+                {
                     node = node.Previous;
+                }
             }
 
             return node;
@@ -130,7 +135,7 @@ namespace Linked_list
 
         public IEnumerator GetEnumerator()
         {
-            for (int i = 0; i < Count; i++)
+            for (var i = 0; i < Count; i++)
             {
                 yield return this[i];
             }

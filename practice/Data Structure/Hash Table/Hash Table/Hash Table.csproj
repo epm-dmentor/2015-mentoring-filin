@@ -7,7 +7,7 @@
     <ProjectGuid>{5B556B57-97CF-470B-9BCA-C2D44493D3F0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Hash_Table</RootNamespace>
+    <RootNamespace>Epam.NetMentoring.DataStructures.HashTable</RootNamespace>
     <AssemblyName>Hash Table</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

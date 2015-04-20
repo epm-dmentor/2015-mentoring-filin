@@ -1,5 +1,0 @@
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Data Structure\Hash Table\Hash Table\bin\Debug\Hash Table.exe.config
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Data Structure\Hash Table\Hash Table\bin\Debug\Hash Table.exe
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Data Structure\Hash Table\Hash Table\bin\Debug\Hash Table.pdb
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Data Structure\Hash Table\Hash Table\obj\Debug\Hash Table.exe
-C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Data Structure\Hash Table\Hash Table\obj\Debug\Hash Table.pdb

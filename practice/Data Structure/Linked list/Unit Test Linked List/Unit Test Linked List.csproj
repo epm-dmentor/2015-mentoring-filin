@@ -6,7 +6,7 @@
     <ProjectGuid>{9842E759-8D40-45B2-8A5B-DF5CBEA43F80}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Unit_Test_Linked_List</RootNamespace>
+    <RootNamespace>Epam.NetMentoring.DataStructures.LinkedList</RootNamespace>
     <AssemblyName>Unit Test Linked List</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

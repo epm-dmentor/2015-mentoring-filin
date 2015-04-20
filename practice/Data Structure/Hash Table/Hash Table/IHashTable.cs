@@ -1,4 +1,4 @@
-﻿namespace Hash_Table
+﻿namespace Epam.NetMentoring.DataStructures.HashTable
 {
     internal interface IHashTable
     {

@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace Linked_list
+namespace Epam.NetMentoring.DataStructures.LinkedList
 {
     internal class Program
     {
         private static void Main(string[] args)
         {
             var random = new Random();
-            var list = new Linked_List();
+            var list = new LinkedList();
             for (var i = 0; i < 3; i++)
             {
                 list.Add(random.Next(i, 10));

@@ -2,12 +2,12 @@
 
 using System;
 using System.Collections.Generic;
-using Hash_Table;
+using Epam.NetMentoring.DataStructures.HashTable;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 #endregion
 
-namespace UnitTests
+namespace Epam.NetMentoring.DataStructures.UnitTests
 {
     [TestClass]
     public class UnitTest
@@ -16,7 +16,7 @@ namespace UnitTests
         [ExpectedException(typeof (Exception))]
         public void Add() //add the object by a key which already exists
         {
-            CustomHashTable ht = new CustomHashTable(3);
+            HashTable.HashTable ht = new HashTable.HashTable(3);
             ht.Add("1", "somevalue");
             ht.Add("2", "anothervalue");
 
@@ -27,7 +27,7 @@ namespace UnitTests
         [ExpectedException(typeof (KeyNotFoundException))]
         public void Get() //get the object by a key which does not exit
         {
-            CustomHashTable ht = new CustomHashTable(3);
+            HashTable.HashTable ht = new HashTable.HashTable(3);
             ht.Add("1", "somevalue");
             ht.Add("2", "anothervalue");
             ht.Add("3", "thirdvalue");
@@ -39,7 +39,7 @@ namespace UnitTests
         public void Set() //If setter is null, element wil be removed
         {
             object test;
-            CustomHashTable ht = new CustomHashTable(3);
+            HashTable.HashTable ht = new HashTable.HashTable(3);
             ht.Add("1", "somevalue");
             ht.Add("2", "anothervalue");
 
