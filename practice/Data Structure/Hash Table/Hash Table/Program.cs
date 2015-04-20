@@ -14,14 +14,15 @@ namespace Hash_Table
             CustomHashTable ht = new CustomHashTable(10);
             ht.Add("1","fdgdgfdg");
             ht.Add("2","yuu");
-            ht.Add("1", "sfr");
-
+            //ht.Add("1", "sfr");
+            
             object test;
             Console.WriteLine(ht["1"]);
 
             Console.WriteLine(ht.Contains("3"));
             ht.TryGet("1", out test);
             Console.WriteLine(test);
+           ht["1"] = null;
             Console.Read();
         }
     }
