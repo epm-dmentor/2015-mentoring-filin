@@ -2,6 +2,7 @@
 {
     internal class Node
     {
+        //BK:I think currentNode should be replaced with value
         public Node(object currentNode, Node nextNode, Node previousNode)
         {
             Current = currentNode;

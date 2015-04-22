@@ -3,8 +3,10 @@ using System.Collections;
 
 namespace Linked_list
 {
+    //BK: Never use underscores in a naming. Why do you use that here?
     public class Linked_List: IEnumerable
     {
+        //BK: I would strongly recommend not to use underscrores in the code too
         private readonly Node _head;
 
         public Linked_List()
@@ -58,6 +60,7 @@ namespace Linked_list
         {
             Node node;
 
+            //BK: Put that if statement into findNodeAt better
             if (index == Count)
                 node = new Node(value, _head, _head.Previous);
             else
@@ -66,7 +69,7 @@ namespace Linked_list
 
                 node = new Node(value, tmp, tmp.Previous);
             }
-
+            
             node.Previous.Next = node;
             node.Next.Previous = node;
 
@@ -75,6 +78,7 @@ namespace Linked_list
 
         public void Remove(object value)
         {
+            //BK: Why do you need if else statement here? Use == for example and no "if else"
             if (value == null)
             {
                 for (var node = _head.Next; node != _head; node = node.Next)
