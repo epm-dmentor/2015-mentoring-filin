@@ -6,8 +6,10 @@ using System.Linq;
 
 #endregion
 
+//BK: What a strange namespace :) Please use conventional namespaces
 namespace Hash_Table
 {
+    //BK:Why can't you name that simply HashTable?
     public class CustomHashTable : IHashTable
     {
         private readonly LinkedList<Bucket>[] _items;
@@ -81,13 +83,16 @@ namespace Hash_Table
             int index = GetHashCode(key);
             LinkedList<Bucket> linkedList = Buckets(index);
             bool itemFound = false;
+            //BK: Why do you initialize new Bucket here?
             Bucket foundItem = new Bucket();
+            //BK:Why do you need all that logic? This should be done in Linked LIst implementation!
             foreach (Bucket item in linkedList)
             {
                 if (item.Key.Equals(key))
                 {
                     itemFound = true;
                     foundItem = item;
+                    //BK: Break here???
                 }
             }
             if (itemFound)
@@ -109,6 +114,7 @@ namespace Hash_Table
             return linkedList.SingleOrDefault(item => item.Key.Equals(key));
         }
 
+        //BK: This method doesn't look very explanatory
         private LinkedList<Bucket> Buckets(int index)
         {
             LinkedList<Bucket> linkedList = _items[index];
@@ -119,7 +125,7 @@ namespace Hash_Table
             }
             return linkedList;
         }
-
+        //BK: Why have you decided to use structure not class here?
         private struct Bucket
         {
             public object Key { get; set; }
