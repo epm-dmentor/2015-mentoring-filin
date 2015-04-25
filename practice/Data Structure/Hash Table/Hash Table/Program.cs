@@ -9,7 +9,7 @@ namespace Epam.NetMentoring.DataStructures.HashTable
             HashTable ht = new HashTable(10); //HashTable with fixed size
             ht.Add("1","fdgdgfdg");
             ht.Add("2","yuu");
-            ht.Add("3", "sfr");
+            ht.Add("3","sfr");
             
             object test;
             Console.WriteLine(ht["1"]);
