@@ -90,25 +90,6 @@ namespace Epam.NetMentoring.DataStructures.HashTable
             //AF:Improved logic
             int bucketNumber = GetBucketNumberHashCode(key);
             buckets(bucketNumber).Clear();
-
-
-            //bool itemFound = false;
-            ////BK: Why do you initialize new Bucket here?
-            //Bucket foundItem = new Bucket();
-            ////BK:Why do you need all that logic? This should be done in Linked LIst implementation!
-            //foreach (Bucket item in linkedList)
-            //{
-            //    if (item.Key.Equals(key))
-            //    {
-            //        itemFound = true;
-            //        foundItem = item;
-            //        //BK: Break here???
-            //    }
-            //}
-            //if (itemFound)
-            //{
-            //    linkedList.Remove(foundItem);
-            //}
         }
 
         private int GetBucketNumberHashCode(object key)
