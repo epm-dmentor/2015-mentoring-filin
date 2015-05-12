@@ -6,7 +6,7 @@ namespace Epam.Mentoring.Patterns.Observer.StockExchange
     class StockMarketing
     {
         private event EventHandler<StockDetailsEventArgs> PriceChanged;
-        private Stock stock;
+        private readonly Stock stock;
 
         public StockMarketing(Stock stock)
         {
@@ -43,9 +43,14 @@ namespace Epam.Mentoring.Patterns.Observer.StockExchange
             PriceChanged(this, args);
         }
 
-        public void Attach(IBidder observerBids)
+        public void Attach(IInvestor observer)
         {
-            PriceChanged += observerBids.StockPriceChanged;
+            PriceChanged += observer.StockPriceChanged;
+        }
+
+        public void Deattach(IInvestor observer)
+        {
+            PriceChanged -= observer.StockPriceChanged;
         }
     }
 }

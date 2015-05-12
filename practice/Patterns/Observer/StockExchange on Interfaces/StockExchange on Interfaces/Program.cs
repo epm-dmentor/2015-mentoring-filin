@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Epam.NetMentoring.Patterns.Observer.StockExchange_on_Interfaces
+namespace Epam.NetMentoring.Patterns.Observer.StockExchangeOnInterfaces
 {
     class Program
     {
@@ -15,7 +15,7 @@ namespace Epam.NetMentoring.Patterns.Observer.StockExchange_on_Interfaces
             market.Attach(mark);
 
             market.OpeningTenders();
-            market.Deattach(alex);
+
             Console.ReadKey();
         }
     }

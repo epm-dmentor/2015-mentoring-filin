@@ -1,6 +1,6 @@
 ﻿namespace Epam.Mentoring.Patterns.Observer.StockExchange
 {
-    internal interface IBidder
+    interface IInvestor
     {
         void StockPriceChanged(object sender, StockDetailsEventArgs e);
     }

@@ -2,11 +2,11 @@
 
 namespace Epam.Mentoring.Patterns.Observer.StockExchange
 {
-    class Investor : IBidder
+    class Investor : IInvestor
     {
-        public string name;
-        private double price;
-        private Stock stock;
+        private readonly string name;
+        private readonly double price;
+        private readonly Stock stock;
         private bool bought;
 
         public Investor(string name, double price, Stock stock)

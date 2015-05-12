@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace Epam.NetMentoring.Patterns.Observer.StockExchange_on_Interfaces
+namespace Epam.NetMentoring.Patterns.Observer.StockExchangeOnInterfaces
 {
-    internal class Investor : IObserver
+    class Investor : IObserver
     {
 
-        public string name;
-        private double price;
-        private Stock stock;
+        private readonly string name;
+        private readonly double price;
+        private readonly Stock stock;
         private bool bought;
 
         public Investor(string name, double price, Stock stock)

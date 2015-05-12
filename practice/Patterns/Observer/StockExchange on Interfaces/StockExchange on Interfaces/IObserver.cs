@@ -1,6 +1,6 @@
-﻿namespace Epam.NetMentoring.Patterns.Observer.StockExchange_on_Interfaces
+﻿namespace Epam.NetMentoring.Patterns.Observer.StockExchangeOnInterfaces
 {
-    internal interface IObserver
+    interface IObserver
     {
         void StockPriceChanged(double stockPrice);
     }

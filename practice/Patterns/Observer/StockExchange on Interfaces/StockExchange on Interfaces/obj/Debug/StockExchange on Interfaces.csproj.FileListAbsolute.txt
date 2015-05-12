@@ -1,0 +1,4 @@
+C:\GitHub\mentoring\practice\Patterns\Observer\StockExchange on Interfaces\StockExchange on Interfaces\bin\Debug\StockExchange on Interfaces.exe
+C:\GitHub\mentoring\practice\Patterns\Observer\StockExchange on Interfaces\StockExchange on Interfaces\bin\Debug\StockExchange on Interfaces.pdb
+C:\GitHub\mentoring\practice\Patterns\Observer\StockExchange on Interfaces\StockExchange on Interfaces\obj\Debug\StockExchange on Interfaces.exe
+C:\GitHub\mentoring\practice\Patterns\Observer\StockExchange on Interfaces\StockExchange on Interfaces\obj\Debug\StockExchange on Interfaces.pdb

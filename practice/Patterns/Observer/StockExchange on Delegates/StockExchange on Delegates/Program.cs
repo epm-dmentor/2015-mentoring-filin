@@ -15,7 +15,7 @@ namespace Epam.NetMentoring.Patterns.Observer.StockExchangeOnDelegates
             market.Attach(mark);
 
             market.OpeningTenders();
-            market.Deattach(alex);
+
             Console.ReadKey();
         }
     }

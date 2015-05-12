@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Threading;
 
-namespace Epam.NetMentoring.Patterns.Observer.StockExchange_on_Interfaces
+namespace Epam.NetMentoring.Patterns.Observer.StockExchangeOnInterfaces
 {
     class StockMarketing : IObservable
     {
-        private IList<IObserver> investors;
-        private Stock stock;
+        private readonly IList<IObserver> investors;
+        private readonly Stock stock;
 
         public StockMarketing(Stock stock)
         {

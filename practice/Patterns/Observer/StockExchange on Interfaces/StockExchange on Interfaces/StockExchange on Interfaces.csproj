@@ -7,7 +7,7 @@
     <ProjectGuid>{92E4F573-825C-4D71-9B4D-91720B944857}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Epam.NetMentoring.Patterns.Observer.StockExchange_on_Interfaces</RootNamespace>
+    <RootNamespace>Epam.NetMentoring.Patterns.Observer.StockExchangeOnInterfaces</RootNamespace>
     <AssemblyName>StockExchange on Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
