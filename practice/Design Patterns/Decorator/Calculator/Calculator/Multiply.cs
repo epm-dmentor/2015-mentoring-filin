@@ -1,4 +1,4 @@
-﻿namespace Calculator
+﻿namespace Epam.Mentoring.Patterns.Decorator.Calculator
 {
     internal class Multiply : IOperation
     {
