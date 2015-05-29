@@ -1,0 +1,4 @@
+C:\GitHub\mentoring\practice\Design Patterns\Decorator\Calculation Service\Calculation Service\bin\Debug\Calculation Service.exe
+C:\GitHub\mentoring\practice\Design Patterns\Decorator\Calculation Service\Calculation Service\bin\Debug\Calculation Service.pdb
+C:\GitHub\mentoring\practice\Design Patterns\Decorator\Calculation Service\Calculation Service\obj\Debug\Calculation Service.exe
+C:\GitHub\mentoring\practice\Design Patterns\Decorator\Calculation Service\Calculation Service\obj\Debug\Calculation Service.pdb
