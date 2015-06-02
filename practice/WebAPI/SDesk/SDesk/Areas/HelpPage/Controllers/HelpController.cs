@@ -1,12 +1,16 @@
+#region
+
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
 using SDesk.Areas.HelpPage.Models;
 
+#endregion
+
 namespace SDesk.Areas.HelpPage.Controllers
 {
     /// <summary>
-    /// The controller that will handle requests for the help page.
+    ///     The controller that will handle requests for the help page.
     /// </summary>
     public class HelpController : Controller
     {

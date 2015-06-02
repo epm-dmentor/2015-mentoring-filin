@@ -1,4 +1,8 @@
-﻿using System;
+﻿#region
+
+using System;
+
+#endregion
 
 namespace SDesk.Models
 {
@@ -14,6 +18,5 @@ namespace SDesk.Models
         public Priority Priority { get; set; } //enum
         public DateTime Received { get; set; } //date when we received email
         public DateTime Saved { get; set; } //date when we saved mail entity
-
     }
 }

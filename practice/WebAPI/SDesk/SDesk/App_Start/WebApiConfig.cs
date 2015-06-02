@@ -1,7 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿#region
+
 using System.Web.Http;
+
+#endregion
 
 namespace SDesk
 {
@@ -9,20 +10,14 @@ namespace SDesk
     {
         public static void Register(HttpConfiguration config)
         {
-            config.Routes.MapHttpRoute(
-                name: "Attachements",
-                routeTemplate: "api/mails/{id}/attachements/{attId}",
-                defaults: new { controller = "Attachements", attId = RouteParameter.Optional }
-            );
-
-            config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
-            );
-
             config.MapHttpAttributeRoutes();
-            
+
+            config.Routes.MapHttpRoute("Attachements", "api/mails/{id}/attachements/{attId}",
+                new {controller = "Attachements", attId = RouteParameter.Optional});
+
+            config.Routes.MapHttpRoute("DefaultApi", "api/mails/{id}", 
+                new {controller = "Mails", id = RouteParameter.Optional});
+
 
             // Uncomment the following line of code to enable query support for actions with an IQueryable or IQueryable<T> return type.
             // To avoid processing unexpected or malicious queries, use the validation settings on QueryableAttribute to validate incoming queries.
