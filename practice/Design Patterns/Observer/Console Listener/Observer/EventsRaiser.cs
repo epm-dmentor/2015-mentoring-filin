@@ -20,6 +20,7 @@ namespace Epam.NetMentoring.Patterns.Observer
 
         public void Detach(ISubscriber observer)
         {
+            //Why do you need that? Can't u use only Remove?
             int i = observers.IndexOf(observer);
 
             if (i >= 0)
