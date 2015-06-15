@@ -2,11 +2,11 @@
 
 namespace Epam.NetMentoring.Patterns.Observer
 {
-    class Sub : ISubscriber
+    internal class MessageDisplaySubscriber : ISubscriber
     {
         public void Update(string eventDetails)
         {
-            Console.WriteLine(eventDetails);
+            Console.WriteLine("You've typed - " + eventDetails);
         }
     }
 }

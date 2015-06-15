@@ -4,6 +4,6 @@
     {
         void Attach(ISubscriber observer);
         void Detach(ISubscriber observer);
-        void Notify();
+        void CheckingConsole();
     }
 }

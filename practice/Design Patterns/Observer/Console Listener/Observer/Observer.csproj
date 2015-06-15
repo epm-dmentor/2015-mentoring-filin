@@ -44,10 +44,11 @@
     <Compile Include="EventsRaiser.cs" />
     <Compile Include="ISubscriber.cs" />
     <Compile Include="ISubject.cs" />
-    <Compile Include="Sub.cs" />
+    <Compile Include="LoggerSubscriber.cs" />
+    <Compile Include="MessageDisplaySubscriber.cs" />
+    <Compile Include="QuitSubscriber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UpdatedEventArgs.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
