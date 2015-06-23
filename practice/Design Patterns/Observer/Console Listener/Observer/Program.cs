@@ -14,6 +14,7 @@ namespace Epam.NetMentoring.Patterns.Observer
 
         
         //AF: Updated
+        //BK: That is pretty good. The only thing is worth taking care is disposing algorithm for LoggerSubscriber. You shouldn't dispose that when writing smth, but should dispose when detaching it or disposing ISubject
         static void Main(string[] args)
         {
             Console.WriteLine("Type something to update console:");
