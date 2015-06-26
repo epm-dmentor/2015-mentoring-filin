@@ -1,0 +1,5 @@
+C:\GitHub\Mentoring\practice\Design Patterns\Observer\StockExchange on Delegates\StockExchange on Delegates\bin\Debug\StockExchange on Delegates.exe
+C:\GitHub\Mentoring\practice\Design Patterns\Observer\StockExchange on Delegates\StockExchange on Delegates\bin\Debug\StockExchange on Delegates.pdb
+C:\GitHub\Mentoring\practice\Design Patterns\Observer\StockExchange on Delegates\StockExchange on Delegates\obj\Debug\StockExchange on Delegates.csprojResolveAssemblyReference.cache
+C:\GitHub\Mentoring\practice\Design Patterns\Observer\StockExchange on Delegates\StockExchange on Delegates\obj\Debug\StockExchange on Delegates.exe
+C:\GitHub\Mentoring\practice\Design Patterns\Observer\StockExchange on Delegates\StockExchange on Delegates\obj\Debug\StockExchange on Delegates.pdb

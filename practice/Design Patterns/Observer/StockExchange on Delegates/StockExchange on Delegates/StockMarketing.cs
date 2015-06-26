@@ -6,8 +6,8 @@ namespace Epam.NetMentoring.Patterns.Observer.StockExchangeOnDelegates
     class StockMarketing
     {
         private readonly Stock stock;
-        private delegate void PriceChanged(double price);
-        private PriceChanged changed;
+        public delegate void PriceChanged(double price);
+        public PriceChanged PriceChangedEvent { get; set; }
 
         public StockMarketing(Stock stock)
         {
@@ -35,20 +35,20 @@ namespace Epam.NetMentoring.Patterns.Observer.StockExchangeOnDelegates
 
         private void OnStockPriceChanged(double currentPrice)
         {
-            if (changed == null) return;
+            if (PriceChangedEvent == null) return;
             Console.WriteLine("{0}'s current price is {1}", stock.Name, currentPrice);
-            changed(currentPrice);
+            PriceChangedEvent(currentPrice);
         }
 
-        public void Attach(IObserver observer)
-        {
+        //public void Attach(IObserver observer)
+        //{
 
-            changed += observer.StockPriceChanged;
-        }
+        //    changed += observer.StockPriceChanged;
+        //}
 
-        public void Deattach(IObserver observer)
-        {
-            changed -= observer.StockPriceChanged;
-        }
+        //public void Deattach(IObserver observer)
+        //{
+        //    changed -= observer.StockPriceChanged;
+        //}
     }
 }

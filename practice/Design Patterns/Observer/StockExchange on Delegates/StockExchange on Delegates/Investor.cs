@@ -2,7 +2,7 @@
 
 namespace Epam.NetMentoring.Patterns.Observer.StockExchangeOnDelegates
 {
-    class Investor : IObserver
+    class Investor 
     {
         private readonly string name;
         private readonly double price;
