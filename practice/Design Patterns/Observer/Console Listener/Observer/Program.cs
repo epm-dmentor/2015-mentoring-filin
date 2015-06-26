@@ -15,6 +15,7 @@ namespace Epam.NetMentoring.Patterns.Observer
         
         //AF: Updated
         //BK: That is pretty good. The only thing is worth taking care is disposing algorithm for LoggerSubscriber. You shouldn't dispose that when writing smth, but should dispose when detaching it or disposing ISubject
+        //AF: Implemented IDisposable for LoggerSubscriber and invoke dispose method before detach.
         static void Main(string[] args)
         {
             Console.WriteLine("Type something to update console:");
@@ -29,7 +30,9 @@ namespace Epam.NetMentoring.Patterns.Observer
             raiseEvent.Attach(logger);
 
             raiseEvent.CheckingConsole();
-            
+
+            (logger as IDisposable).Dispose();
+            raiseEvent.Detach(logger);
         }
     }
 }

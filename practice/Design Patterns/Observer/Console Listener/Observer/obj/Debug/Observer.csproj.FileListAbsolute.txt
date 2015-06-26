@@ -12,4 +12,3 @@ C:\GitHub\Mentoring\practice\Design Patterns\Observer\Console Listener\Observer\
 C:\GitHub\Mentoring\practice\Design Patterns\Observer\Console Listener\Observer\obj\Debug\Observer.pdb
 C:\GitHub\Mentoring\practice\Design Patterns\Observer\Console Listener\Observer\bin\Debug\Observer.exe
 C:\GitHub\Mentoring\practice\Design Patterns\Observer\Console Listener\Observer\bin\Debug\Observer.pdb
-C:\GitHub\Mentoring\practice\Design Patterns\Observer\Console Listener\Observer\obj\Debug\Observer.csprojResolveAssemblyReference.cache
