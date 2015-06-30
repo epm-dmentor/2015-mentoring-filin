@@ -8,13 +8,14 @@ namespace Epam.Mentoring.Patterns.Observer.StockExchange
         {
             Stock epam = new Stock("epam", 14.00, 7.00);
             StockMarketing market = new StockMarketing(epam);
-            IInvestor alex = new Investor("Alex", 12.00, epam);
-            IInvestor mark = new Investor("Mark", 11.00, epam);
+            Investor alex = new Investor("Alex", 12.00, epam);
+            Investor mark = new Investor("Mark", 11.00, epam);
 
-            market.Attach(alex);
-            market.Attach(mark);
-
+            market.PriceChanged += alex.StockPriceChanged;
+            market.PriceChanged += mark.StockPriceChanged;
             market.OpeningTenders();
+
+            
             Console.ReadKey();
         }
     }

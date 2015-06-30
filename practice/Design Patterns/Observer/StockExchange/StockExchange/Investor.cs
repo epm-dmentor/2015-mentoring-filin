@@ -2,7 +2,7 @@
 
 namespace Epam.Mentoring.Patterns.Observer.StockExchange
 {
-    class Investor : IInvestor
+    class Investor
     {
         private readonly string name;
         private readonly double price;

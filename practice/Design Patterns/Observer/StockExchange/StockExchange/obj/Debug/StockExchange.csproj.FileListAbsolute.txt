@@ -1,0 +1,5 @@
+C:\GitHub\Mentoring\practice\Design Patterns\Observer\StockExchange\StockExchange\bin\Debug\StockExchange.exe
+C:\GitHub\Mentoring\practice\Design Patterns\Observer\StockExchange\StockExchange\bin\Debug\StockExchange.pdb
+C:\GitHub\Mentoring\practice\Design Patterns\Observer\StockExchange\StockExchange\obj\Debug\StockExchange.csprojResolveAssemblyReference.cache
+C:\GitHub\Mentoring\practice\Design Patterns\Observer\StockExchange\StockExchange\obj\Debug\StockExchange.exe
+C:\GitHub\Mentoring\practice\Design Patterns\Observer\StockExchange\StockExchange\obj\Debug\StockExchange.pdb
