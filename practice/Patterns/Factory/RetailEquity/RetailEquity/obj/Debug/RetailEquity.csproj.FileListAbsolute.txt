@@ -1,0 +1,6 @@
+C:\GitHub\mentoring\practice\Patterns\Factory\RetailEquity\RetailEquity\bin\Debug\RetailEquity.exe.config
+C:\GitHub\mentoring\practice\Patterns\Factory\RetailEquity\RetailEquity\bin\Debug\RetailEquity.exe
+C:\GitHub\mentoring\practice\Patterns\Factory\RetailEquity\RetailEquity\bin\Debug\RetailEquity.pdb
+C:\GitHub\mentoring\practice\Patterns\Factory\RetailEquity\RetailEquity\obj\Debug\RetailEquity.csprojResolveAssemblyReference.cache
+C:\GitHub\mentoring\practice\Patterns\Factory\RetailEquity\RetailEquity\obj\Debug\RetailEquity.exe
+C:\GitHub\mentoring\practice\Patterns\Factory\RetailEquity\RetailEquity\obj\Debug\RetailEquity.pdb
