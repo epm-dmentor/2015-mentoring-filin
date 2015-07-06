@@ -9,6 +9,7 @@ namespace Epam.Mentoring.Patterns.Decorator.CalculationService
 {
     internal class Program
     {
+        //BK: That is so far good
         private static void Main(string[] args)
         {
             ConsoleKey key;
