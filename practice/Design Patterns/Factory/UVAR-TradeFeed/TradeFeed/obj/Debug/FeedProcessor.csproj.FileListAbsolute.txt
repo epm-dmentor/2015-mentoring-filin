@@ -1,0 +1,9 @@
+C:\Users\filinale\Downloads\mentoring-bayram-master\practice\Patterns\Factory\FactoryMethod\FeedProcessor\FeedProcessor\bin\Debug\Epam.NetMentoring.FeedProcessor.exe.config
+C:\Users\filinale\Downloads\mentoring-bayram-master\practice\Patterns\Factory\FactoryMethod\FeedProcessor\FeedProcessor\bin\Debug\Epam.NetMentoring.FeedProcessor.exe
+C:\Users\filinale\Downloads\mentoring-bayram-master\practice\Patterns\Factory\FactoryMethod\FeedProcessor\FeedProcessor\bin\Debug\Epam.NetMentoring.FeedProcessor.pdb
+C:\Users\filinale\Downloads\mentoring-bayram-master\practice\Patterns\Factory\FactoryMethod\FeedProcessor\FeedProcessor\obj\Debug\FeedProcessor.csprojResolveAssemblyReference.cache
+C:\Users\filinale\Downloads\mentoring-bayram-master\practice\Patterns\Factory\FactoryMethod\FeedProcessor\FeedProcessor\obj\Debug\Epam.NetMentoring.FeedProcessor.exe
+C:\Users\filinale\Downloads\mentoring-bayram-master\practice\Patterns\Factory\FactoryMethod\FeedProcessor\FeedProcessor\obj\Debug\Epam.NetMentoring.FeedProcessor.pdb
+C:\GitHub\Mentoring\practice\Design Patterns\Factory\UVAR-TradeFeed\FeedProcessor\bin\Debug\Epam.NetMentoring.FeedProcessor.exe.config
+C:\GitHub\Mentoring\practice\Design Patterns\Factory\UVAR-TradeFeed\FeedProcessor\obj\Debug\Epam.NetMentoring.FeedProcessor.exe
+C:\GitHub\Mentoring\practice\Design Patterns\Factory\UVAR-TradeFeed\FeedProcessor\obj\Debug\Epam.NetMentoring.FeedProcessor.pdb

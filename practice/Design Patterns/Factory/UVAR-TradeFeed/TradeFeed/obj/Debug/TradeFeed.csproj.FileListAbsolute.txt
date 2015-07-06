@@ -1,0 +1,11 @@
+C:\GitHub\Mentoring\practice\Design Patterns\Factory\UVAR-TradeFeed\FeedProcessor\bin\Debug\TradeFeed.exe.config
+C:\GitHub\Mentoring\practice\Design Patterns\Factory\UVAR-TradeFeed\FeedProcessor\bin\Debug\TradeFeed.exe
+C:\GitHub\Mentoring\practice\Design Patterns\Factory\UVAR-TradeFeed\FeedProcessor\bin\Debug\TradeFeed.pdb
+C:\GitHub\Mentoring\practice\Design Patterns\Factory\UVAR-TradeFeed\FeedProcessor\obj\Debug\TradeFeed.exe
+C:\GitHub\Mentoring\practice\Design Patterns\Factory\UVAR-TradeFeed\FeedProcessor\obj\Debug\TradeFeed.pdb
+C:\GitHub\Mentoring\practice\Design Patterns\Factory\UVAR-TradeFeed\TradeFeed\bin\Debug\TradeFeed.exe.config
+C:\GitHub\Mentoring\practice\Design Patterns\Factory\UVAR-TradeFeed\TradeFeed\obj\Debug\TradeFeed.exe
+C:\GitHub\Mentoring\practice\Design Patterns\Factory\UVAR-TradeFeed\TradeFeed\obj\Debug\TradeFeed.pdb
+C:\GitHub\Mentoring\practice\Design Patterns\Factory\UVAR-TradeFeed\TradeFeed\bin\Debug\TradeFeed.exe
+C:\GitHub\Mentoring\practice\Design Patterns\Factory\UVAR-TradeFeed\TradeFeed\bin\Debug\TradeFeed.pdb
+C:\GitHub\Mentoring\practice\Design Patterns\Factory\UVAR-TradeFeed\TradeFeed\obj\Debug\TradeFeed.csprojResolveAssemblyReference.cache
