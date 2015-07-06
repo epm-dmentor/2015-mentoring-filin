@@ -4,8 +4,11 @@ namespace Epam.Mentoring.Patterns.Decorator.Calculator
 {
     internal class Program
     {
+        //BK: That is quite good. Please implement task b) and ignore task c). We will come back to injection later
         private static void Main(string[] args)
         {
+            
+
             //(10+2)*8/6-6 = 10
             var result = new Minus(
                 new Divide(
