@@ -15,6 +15,7 @@ namespace Epam.NetMentoring.Patterns.Factory.RetailEquity
             };
 
             var factory = new FilterFactory();
+            //BK:CreateFilter is much more explanatory naming than just Filter
             IEnumerable<Trade> barclays = factory.Filter("Barclays").Comply(trades);
             IEnumerable<Trade> bofa = factory.Filter("Bofa").Comply(trades);
             IEnumerable<Trade> connacord = factory.Filter("Connacord").Comply(trades);

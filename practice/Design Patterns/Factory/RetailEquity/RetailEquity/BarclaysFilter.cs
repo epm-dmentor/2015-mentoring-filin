@@ -5,6 +5,7 @@ namespace Epam.NetMentoring.Patterns.Factory.RetailEquity
 {
     internal class BarclaysFilter : IFilter
     {
+        //BK: I would recomend you to write conts all in upper case like TYPE, SUB_TYPE etc. Thus you always see where your code uses cont
         private const string Type = "Option";
         private const string SubType = "NyOption";
         private const int Amount = 50;
