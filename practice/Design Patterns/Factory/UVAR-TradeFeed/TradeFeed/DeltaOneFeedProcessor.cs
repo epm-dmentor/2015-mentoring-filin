@@ -20,7 +20,7 @@ namespace Epam.NetMentoring.Patterns.Factory.TradeFeed
 
             return validation;
         }
-
+        //BK: Throwing an exception? By doing so you will break all the other feeds. You need some more flexible logic here
         public void Meet(FeedItem feedItem)
         {
             var deltaOneFeed = feedItem as DeltaOne;

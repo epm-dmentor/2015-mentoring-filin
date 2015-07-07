@@ -5,6 +5,7 @@ namespace Epam.NetMentoring.Patterns.Factory.TradeFeed
 {
     internal class Program
     {
+        //BK: When you have a lot of cs files in a project, group them into folders logically
         private static void Main(string[] args)
         {
             var emOneFeedItems = new List<FeedItem>
@@ -77,6 +78,7 @@ namespace Epam.NetMentoring.Patterns.Factory.TradeFeed
 
             try
             {
+                //BK: be attentive to namings : emFactory->emFeedManager,deltaOneFactory->deltaFeedManager (wrong namings may bring confusion)
 				FeedManager emFactory = new FeedManagerFactory().CreateFeedManager("EmFeed");
 				FeedManager deltaOneFactory = new FeedManagerFactory().CreateFeedManager("DeltaOne");
                 emFactory.Process(emOneFeedItems);
