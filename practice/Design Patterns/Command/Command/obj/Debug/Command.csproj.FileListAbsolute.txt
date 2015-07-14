@@ -1,0 +1,13 @@
+C:\GitHub\mentoring\practice\Patterns\Command\Command\bin\Debug\Command.exe.config
+C:\GitHub\mentoring\practice\Patterns\Command\Command\bin\Debug\Command.exe
+C:\GitHub\mentoring\practice\Patterns\Command\Command\bin\Debug\Command.pdb
+C:\GitHub\mentoring\practice\Patterns\Command\Command\obj\Debug\Command.csprojResolveAssemblyReference.cache
+C:\GitHub\mentoring\practice\Patterns\Command\Command\obj\Debug\App.g.cs
+C:\GitHub\mentoring\practice\Patterns\Command\Command\obj\Debug\Command_MarkupCompile.cache
+C:\GitHub\mentoring\practice\Patterns\Command\Command\obj\Debug\Command.g.resources
+C:\GitHub\mentoring\practice\Patterns\Command\Command\obj\Debug\Command.Properties.Resources.resources
+C:\GitHub\mentoring\practice\Patterns\Command\Command\obj\Debug\Command.csproj.GenerateResource.Cache
+C:\GitHub\mentoring\practice\Patterns\Command\Command\obj\Debug\Command.exe
+C:\GitHub\mentoring\practice\Patterns\Command\Command\obj\Debug\Command.pdb
+C:\GitHub\mentoring\practice\Patterns\Command\Command\obj\Debug\View\MainWindow.baml
+C:\GitHub\mentoring\practice\Patterns\Command\Command\obj\Debug\View\MainWindow.g.cs
