@@ -1,0 +1,6 @@
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Adapter\Adapter\bin\Debug\Adapter.exe.config
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Adapter\Adapter\bin\Debug\Adapter.exe
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Adapter\Adapter\bin\Debug\Adapter.pdb
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Adapter\Adapter\obj\Debug\Adapter.csprojResolveAssemblyReference.cache
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Adapter\Adapter\obj\Debug\Adapter.exe
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Adapter\Adapter\obj\Debug\Adapter.pdb
