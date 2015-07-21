@@ -10,3 +10,9 @@ C:\GitHub\Mentoring\practice\Design Patterns\Template Method\Template Method\bin
 C:\GitHub\Mentoring\practice\Design Patterns\Template Method\Template Method\bin\Debug\Template Method.pdb
 C:\GitHub\Mentoring\practice\Design Patterns\Template Method\Template Method\obj\Debug\Template Method.csprojResolveAssemblyReference.cache
 C:\GitHub\Mentoring\practice\Design Patterns\Template Method\Template Method\obj\Debug\Template Method.pdb
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Template Method\Template Method\bin\Debug\Template Method.exe.config
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Template Method\Template Method\obj\Debug\Template Method.exe
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Template Method\Template Method\obj\Debug\Template Method.pdb
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Template Method\Template Method\bin\Debug\Template Method.exe
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Template Method\Template Method\bin\Debug\Template Method.pdb
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Template Method\Template Method\obj\Debug\Template Method.csprojResolveAssemblyReference.cache
