@@ -1,0 +1,12 @@
+C:\GitHub\mentoring\practice\Patterns\Template Method\Template Method\bin\Debug\Template Method.exe.config
+C:\GitHub\mentoring\practice\Patterns\Template Method\Template Method\bin\Debug\Template Method.exe
+C:\GitHub\mentoring\practice\Patterns\Template Method\Template Method\bin\Debug\Template Method.pdb
+C:\GitHub\mentoring\practice\Patterns\Template Method\Template Method\obj\Debug\Template Method.csprojResolveAssemblyReference.cache
+C:\GitHub\mentoring\practice\Patterns\Template Method\Template Method\obj\Debug\Template Method.exe
+C:\GitHub\mentoring\practice\Patterns\Template Method\Template Method\obj\Debug\Template Method.pdb
+C:\GitHub\Mentoring\practice\Design Patterns\Template Method\Template Method\bin\Debug\Template Method.exe.config
+C:\GitHub\Mentoring\practice\Design Patterns\Template Method\Template Method\obj\Debug\Template Method.exe
+C:\GitHub\Mentoring\practice\Design Patterns\Template Method\Template Method\bin\Debug\Template Method.exe
+C:\GitHub\Mentoring\practice\Design Patterns\Template Method\Template Method\bin\Debug\Template Method.pdb
+C:\GitHub\Mentoring\practice\Design Patterns\Template Method\Template Method\obj\Debug\Template Method.csprojResolveAssemblyReference.cache
+C:\GitHub\Mentoring\practice\Design Patterns\Template Method\Template Method\obj\Debug\Template Method.pdb
