@@ -11,6 +11,7 @@
         {
             if (instance != null) return instance;
 
+            //BK: this is wrong implementation. Please review this and answer why it is wrong.
             lock (SyncObj)
             {
                 instance = new ServiceContext();
