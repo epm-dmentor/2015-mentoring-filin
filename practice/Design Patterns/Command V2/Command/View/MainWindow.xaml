@@ -1,0 +1,24 @@
+﻿<Window x:Class="Command.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:viewModel="clr-namespace:Command.ViewModel"
+        Title="The Command Pattern" Height="427.614" Width="627.83">
+    <Window.DataContext>
+        <viewModel:MainWindowViewModel />
+    </Window.DataContext>
+    <Grid>
+        <Menu HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="614">
+            <MenuItem Header="Commands">
+                <MenuItem Header="{Binding FilesListContent}"
+                          CommandParameter="GetFiles" Command="{Binding ShowContent}" />
+                <MenuItem Header="{Binding ProcessesListContent}"
+                          CommandParameter="GetProcesses" Command="{Binding ShowContent}" />
+                <MenuItem Header="{Binding HttpContent}"
+                          CommandParameter="GetHTTPContent" Command="{Binding ShowContent}" />
+            </MenuItem>
+        </Menu>
+        <TextBox HorizontalAlignment="Left" Height="361" Margin="0,31,0,0" TextWrapping="Wrap"
+                 Text="{Binding DisplayText, UpdateSourceTrigger=PropertyChanged}"
+                 VerticalAlignment="Top" Width="614" VerticalScrollBarVisibility="Auto" />
+    </Grid>
+</Window>

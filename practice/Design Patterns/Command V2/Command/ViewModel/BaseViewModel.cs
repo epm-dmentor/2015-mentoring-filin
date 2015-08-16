@@ -8,11 +8,7 @@ namespace Command.ViewModel
 
         protected void RaisePropertyChangedEvent(string propertyName)
         {
-
-            //BK: Why do you ned that assignment?
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler != null)
-                handler(this, new PropertyChangedEventArgs(propertyName));
+            if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

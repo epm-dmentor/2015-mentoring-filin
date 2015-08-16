@@ -14,3 +14,18 @@ C:\GitHub\mentoring\practice\Patterns\Command\Command\obj\Debug\View\MainWindow.
 C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Command\Command\bin\Debug\Command.exe.config
 C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Command\Command\obj\Debug\Command.exe
 C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Command\Command\obj\Debug\Command.pdb
+D:\Command\Command\bin\Debug\Command.exe.config
+D:\Command\Command\obj\Debug\Command.exe
+D:\Command\Command\obj\Debug\Command.pdb
+D:\Command\Command\bin\Debug\Command.exe
+D:\Command\Command\bin\Debug\Command.pdb
+D:\Command\Command\obj\Debug\Command.csprojResolveAssemblyReference.cache
+D:\Command\Command\obj\Debug\View\MainWindow.baml
+D:\Command\Command\obj\Debug\View\MainWindow.g.cs
+D:\Command\Command\obj\Debug\App.g.cs
+D:\Command\Command\obj\Debug\Command_MarkupCompile.cache
+D:\Command\Command\obj\Debug\Command.g.resources
+D:\Command\Command\obj\Debug\Command.Properties.Resources.resources
+D:\Command\Command\obj\Debug\Command.csproj.GenerateResource.Cache
+D:\Command\Command\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Command\Command\obj\Debug\Command_MarkupCompile.lref
