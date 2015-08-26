@@ -1,11 +1,10 @@
 ﻿namespace Epam.NetMentoring.ServiceContext
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            var service = ServiceContext.GetInstance();
-            
+            var service = ServiceContext.GetInstance;
         }
     }
 }

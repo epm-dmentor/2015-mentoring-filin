@@ -4,13 +4,14 @@
     {
         private static ServiceContext instance;
 
-        private ServiceContext() { }
-
-        //BK: Use Property instead here
-        public static ServiceContext GetInstance()
+        private ServiceContext()
         {
-           return instance ?? (instance = new ServiceContext());
         }
 
+        //BK: Use Property instead here
+        public static ServiceContext GetInstance
+        {
+            get { return instance ?? (instance = new ServiceContext()); }
+        }
     }
 }

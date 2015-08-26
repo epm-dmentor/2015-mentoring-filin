@@ -1,11 +1,19 @@
-﻿namespace Epam.NetMentoring.ServiceContext
+﻿using System;
+using System.Threading;
+
+namespace Epam.NetMentoring.ServiceContext
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            var service = ServiceContext.GetInstance();
-            
+            for (var i = 0; i < 10; i++)
+            {
+                //new Thread(() => ServiceContext.GetInstance.GetHash()).Start();
+                new Thread(() => ServiceContextLazy.GetInstance.GetHash()).Start();
+            }
+
+            Console.ReadKey();
         }
     }
 }

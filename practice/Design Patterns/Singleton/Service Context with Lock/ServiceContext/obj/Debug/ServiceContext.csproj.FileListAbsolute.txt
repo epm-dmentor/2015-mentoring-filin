@@ -13,3 +13,9 @@ C:\GitHub\Mentoring\practice\Singleton\Service Context with Lock\ServiceContext\
 C:\GitHub\Mentoring\practice\Singleton\Service Context with Lock\ServiceContext\bin\Debug\Epam.NetMentoring.ServiceContext.exe
 C:\GitHub\Mentoring\practice\Singleton\Service Context with Lock\ServiceContext\bin\Debug\Epam.NetMentoring.ServiceContext.pdb
 C:\GitHub\Mentoring\practice\Singleton\Service Context with Lock\ServiceContext\obj\Debug\ServiceContext.csprojResolveAssemblyReference.cache
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Singleton\Service Context with Lock\ServiceContext\bin\Debug\Epam.NetMentoring.ServiceContext.exe.config
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Singleton\Service Context with Lock\ServiceContext\obj\Debug\Epam.NetMentoring.ServiceContext.exe
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Singleton\Service Context with Lock\ServiceContext\obj\Debug\Epam.NetMentoring.ServiceContext.pdb
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Singleton\Service Context with Lock\ServiceContext\bin\Debug\Epam.NetMentoring.ServiceContext.exe
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Singleton\Service Context with Lock\ServiceContext\bin\Debug\Epam.NetMentoring.ServiceContext.pdb
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Singleton\Service Context with Lock\ServiceContext\obj\Debug\ServiceContext.csprojResolveAssemblyReference.cache

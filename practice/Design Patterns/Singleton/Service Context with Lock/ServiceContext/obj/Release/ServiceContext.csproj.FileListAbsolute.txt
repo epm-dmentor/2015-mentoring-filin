@@ -1,0 +1,6 @@
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Singleton\Service Context with Lock\ServiceContext\bin\Release\Epam.NetMentoring.ServiceContext.exe.config
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Singleton\Service Context with Lock\ServiceContext\bin\Release\Epam.NetMentoring.ServiceContext.exe
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Singleton\Service Context with Lock\ServiceContext\bin\Release\Epam.NetMentoring.ServiceContext.pdb
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Singleton\Service Context with Lock\ServiceContext\obj\Release\ServiceContext.csprojResolveAssemblyReference.cache
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Singleton\Service Context with Lock\ServiceContext\obj\Release\Epam.NetMentoring.ServiceContext.exe
+C:\Users\Александр\Downloads\Mentoring_GitHub\mentoring-filin\practice\Design Patterns\Singleton\Service Context with Lock\ServiceContext\obj\Release\Epam.NetMentoring.ServiceContext.pdb
