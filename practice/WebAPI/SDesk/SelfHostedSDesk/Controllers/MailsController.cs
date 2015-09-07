@@ -42,18 +42,21 @@ namespace SDesk.Controllers
         }
 
         // POST api/mails
+        [HttpPost]
         public void Post([FromBody] Mail value)
         {
             Mails.Add(value);
         }
 
         // PUT api/mails/5
+        [HttpPut]
         public void Put(int id, [FromBody] Mail value)
         {
             Mails.Add(value);
         }
 
         // DELETE api/mails/5
+        [HttpDelete]
         public void Delete(int id)
         {
             Mails.RemoveAt(id);
