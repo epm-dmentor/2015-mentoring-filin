@@ -91,7 +91,8 @@ namespace SDesk.Areas.HelpPage
             var samples = new Dictionary<MediaTypeHeaderValue, object>();
 
             // Use the samples provided directly for actions
-            var actionSamples = GetAllActionSamples(controllerName, actionName, parameterNames, sampleDirection);
+            IEnumerable<KeyValuePair<HelpPageSampleKey, object>> actionSamples = GetAllActionSamples(controllerName,
+                actionName, parameterNames, sampleDirection);
             foreach (var actionSample in actionSamples)
             {
                 samples.Add(actionSample.Key.MediaType, WrapSampleIfString(actionSample.Value));
@@ -102,7 +103,7 @@ namespace SDesk.Areas.HelpPage
             if (type != null && !typeof (HttpResponseMessage).IsAssignableFrom(type))
             {
                 object sampleObject = GetSampleObject(type);
-                foreach (var formatter in formatters)
+                foreach (MediaTypeFormatter formatter in formatters)
                 {
                     foreach (MediaTypeHeaderValue mediaType in formatter.SupportedMediaTypes)
                     {
@@ -175,7 +176,7 @@ namespace SDesk.Areas.HelpPage
             if (!SampleObjects.TryGetValue(type, out sampleObject))
             {
                 // Try create a default sample object
-                ObjectGenerator objectGenerator = new ObjectGenerator();
+                var objectGenerator = new ObjectGenerator();
                 sampleObject = objectGenerator.GenerateObject(type);
             }
 
@@ -215,8 +216,8 @@ namespace SDesk.Areas.HelpPage
                     new HelpPageSampleKey(sampleDirection, controllerName, actionName, new[] {"*"}), out type))
             {
                 // Re-compute the supported formatters based on type
-                Collection<MediaTypeFormatter> newFormatters = new Collection<MediaTypeFormatter>();
-                foreach (var formatter in api.ActionDescriptor.Configuration.Formatters)
+                var newFormatters = new Collection<MediaTypeFormatter>();
+                foreach (MediaTypeFormatter formatter in api.ActionDescriptor.Configuration.Formatters)
                 {
                     if (IsFormatSupported(sampleDirection, formatter, type))
                     {
@@ -281,7 +282,7 @@ namespace SDesk.Areas.HelpPage
                     content = new ObjectContent(type, value, formatter, mediaType);
                     formatter.WriteToStreamAsync(type, value, ms, content, null).Wait();
                     ms.Position = 0;
-                    StreamReader reader = new StreamReader(ms);
+                    var reader = new StreamReader(ms);
                     string serializedSampleString = reader.ReadToEnd();
                     if (mediaType.MediaType.ToUpperInvariant().Contains("XML"))
                     {
@@ -375,7 +376,7 @@ namespace SDesk.Areas.HelpPage
         private IEnumerable<KeyValuePair<HelpPageSampleKey, object>> GetAllActionSamples(string controllerName,
             string actionName, IEnumerable<string> parameterNames, SampleDirection sampleDirection)
         {
-            HashSet<string> parameterNamesSet = new HashSet<string>(parameterNames, StringComparer.OrdinalIgnoreCase);
+            var parameterNamesSet = new HashSet<string>(parameterNames, StringComparer.OrdinalIgnoreCase);
             foreach (var sample in ActionSamples)
             {
                 HelpPageSampleKey sampleKey = sample.Key;
@@ -392,7 +393,7 @@ namespace SDesk.Areas.HelpPage
 
         private static object WrapSampleIfString(object sample)
         {
-            string stringSample = sample as string;
+            var stringSample = sample as string;
             if (stringSample != null)
             {
                 return new TextSample(stringSample);

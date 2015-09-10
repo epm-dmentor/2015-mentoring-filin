@@ -254,7 +254,7 @@ namespace SDesk.Areas.HelpPage
         private static HelpPageApiModel GenerateApiModel(ApiDescription apiDescription,
             HelpPageSampleGenerator sampleGenerator)
         {
-            HelpPageApiModel apiModel = new HelpPageApiModel();
+            var apiModel = new HelpPageApiModel();
             apiModel.ApiDescription = apiDescription;
 
             try
@@ -282,7 +282,7 @@ namespace SDesk.Areas.HelpPage
 
         private static void LogInvalidSampleAsError(HelpPageApiModel apiModel, object sample)
         {
-            InvalidSample invalidSample = sample as InvalidSample;
+            var invalidSample = sample as InvalidSample;
             if (invalidSample != null)
             {
                 apiModel.ErrorMessages.Add(invalidSample.ErrorMessage);

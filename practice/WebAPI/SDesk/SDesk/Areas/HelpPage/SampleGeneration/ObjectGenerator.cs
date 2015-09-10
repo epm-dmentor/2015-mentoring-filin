@@ -180,9 +180,9 @@ namespace SDesk.Areas.HelpPage
         private static object GenerateTuple(Type type, Dictionary<Type, object> createdObjectReferences)
         {
             Type[] genericArgs = type.GetGenericArguments();
-            object[] parameterValues = new object[genericArgs.Length];
+            var parameterValues = new object[genericArgs.Length];
             bool failedToCreateTuple = true;
-            ObjectGenerator objectGenerator = new ObjectGenerator();
+            var objectGenerator = new ObjectGenerator();
             for (int i = 0; i < genericArgs.Length; i++)
             {
                 parameterValues[i] = objectGenerator.GenerateObject(genericArgs[i], createdObjectReferences);
@@ -214,7 +214,7 @@ namespace SDesk.Areas.HelpPage
             Type[] genericArgs = keyValuePairType.GetGenericArguments();
             Type typeK = genericArgs[0];
             Type typeV = genericArgs[1];
-            ObjectGenerator objectGenerator = new ObjectGenerator();
+            var objectGenerator = new ObjectGenerator();
             object keyObject = objectGenerator.GenerateObject(typeK, createdObjectReferences);
             object valueObject = objectGenerator.GenerateObject(typeV, createdObjectReferences);
             if (keyObject == null && valueObject == null)
@@ -231,7 +231,7 @@ namespace SDesk.Areas.HelpPage
             Type type = arrayType.GetElementType();
             Array result = Array.CreateInstance(type, size);
             bool areAllElementsNull = true;
-            ObjectGenerator objectGenerator = new ObjectGenerator();
+            var objectGenerator = new ObjectGenerator();
             for (int i = 0; i < size; i++)
             {
                 object element = objectGenerator.GenerateObject(type, createdObjectReferences);
@@ -262,7 +262,7 @@ namespace SDesk.Areas.HelpPage
             object result = Activator.CreateInstance(dictionaryType);
             MethodInfo addMethod = dictionaryType.GetMethod("Add") ?? dictionaryType.GetMethod("TryAdd");
             MethodInfo containsMethod = dictionaryType.GetMethod("Contains") ?? dictionaryType.GetMethod("ContainsKey");
-            ObjectGenerator objectGenerator = new ObjectGenerator();
+            var objectGenerator = new ObjectGenerator();
             for (int i = 0; i < size; i++)
             {
                 object newKey = objectGenerator.GenerateObject(typeK, createdObjectReferences);
@@ -272,7 +272,7 @@ namespace SDesk.Areas.HelpPage
                     return null;
                 }
 
-                bool containsKey = (bool) containsMethod.Invoke(result, new[] {newKey});
+                var containsKey = (bool) containsMethod.Invoke(result, new[] {newKey});
                 if (!containsKey)
                 {
                     object newValue = objectGenerator.GenerateObject(typeV, createdObjectReferences);
@@ -330,7 +330,7 @@ namespace SDesk.Areas.HelpPage
             object result = Activator.CreateInstance(collectionType);
             MethodInfo addMethod = collectionType.GetMethod("Add");
             bool areAllElementsNull = true;
-            ObjectGenerator objectGenerator = new ObjectGenerator();
+            var objectGenerator = new ObjectGenerator();
             for (int i = 0; i < size; i++)
             {
                 object element = objectGenerator.GenerateObject(type, createdObjectReferences);
@@ -349,7 +349,7 @@ namespace SDesk.Areas.HelpPage
         private static object GenerateNullable(Type nullableType, Dictionary<Type, object> createdObjectReferences)
         {
             Type type = nullableType.GetGenericArguments()[0];
-            ObjectGenerator objectGenerator = new ObjectGenerator();
+            var objectGenerator = new ObjectGenerator();
             return objectGenerator.GenerateObject(type, createdObjectReferences);
         }
 
@@ -387,7 +387,7 @@ namespace SDesk.Areas.HelpPage
         private static void SetPublicProperties(Type type, object obj, Dictionary<Type, object> createdObjectReferences)
         {
             PropertyInfo[] properties = type.GetProperties(BindingFlags.Public | BindingFlags.Instance);
-            ObjectGenerator objectGenerator = new ObjectGenerator();
+            var objectGenerator = new ObjectGenerator();
             foreach (PropertyInfo property in properties)
             {
                 if (property.CanWrite)
@@ -401,7 +401,7 @@ namespace SDesk.Areas.HelpPage
         private static void SetPublicFields(Type type, object obj, Dictionary<Type, object> createdObjectReferences)
         {
             FieldInfo[] fields = type.GetFields(BindingFlags.Public | BindingFlags.Instance);
-            ObjectGenerator objectGenerator = new ObjectGenerator();
+            var objectGenerator = new ObjectGenerator();
             foreach (FieldInfo field in fields)
             {
                 object fieldValue = objectGenerator.GenerateObject(field.FieldType, createdObjectReferences);

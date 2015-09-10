@@ -5,7 +5,6 @@ C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\obj\Debug\SelfHostedSD
 C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\obj\Debug\SelfHostedSDesk.exe
 C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\obj\Debug\SelfHostedSDesk.pdb
 C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\bin\Debug\Microsoft.Owin.dll
-C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
 C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\bin\Debug\Microsoft.Owin.Hosting.dll
 C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\bin\Debug\Newtonsoft.Json.dll
 C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\bin\Debug\Owin.dll
@@ -13,9 +12,10 @@ C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\bin\Debug\System.Net.H
 C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\bin\Debug\System.Web.Http.dll
 C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\bin\Debug\System.Web.Http.Owin.dll
 C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\bin\Debug\Microsoft.Owin.xml
-C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
 C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\bin\Debug\Microsoft.Owin.Hosting.xml
 C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\bin\Debug\Newtonsoft.Json.xml
 C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\bin\Debug\System.Net.Http.Formatting.xml
 C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\bin\Debug\System.Web.Http.xml
 C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\bin\Debug\System.Web.Http.Owin.xml
+C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+C:\GitHub\Mentoring\practice\WebAPI\SDesk\SelfHostedSDesk\bin\Debug\Microsoft.Owin.Host.HttpListener.xml

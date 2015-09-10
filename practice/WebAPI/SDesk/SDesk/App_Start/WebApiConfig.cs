@@ -15,7 +15,7 @@ namespace SDesk
             config.Routes.MapHttpRoute("Attachements", "api/mails/{id}/attachements/{attId}",
                 new {controller = "Attachements", attId = RouteParameter.Optional});
 
-            config.Routes.MapHttpRoute("DefaultApi", "api/mails/{id}", 
+            config.Routes.MapHttpRoute("DefaultApi", "api/mails/{id}",
                 new {controller = "Mails", id = RouteParameter.Optional});
 
 

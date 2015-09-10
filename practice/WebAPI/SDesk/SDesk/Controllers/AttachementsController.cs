@@ -33,8 +33,8 @@ namespace SDesk.Controllers
         public Attachement Get([FromUri] int attId, [FromUri] string ext, [FromUri] int status)
         {
             return Attachements.FirstOrDefault(attachement =>
-                        attachement.FileExtention == ext && attachement.Id == attId && 
-                        attachement.StatusId == status);
+                attachement.FileExtention == ext && attachement.Id == attId &&
+                attachement.StatusId == status);
         }
 
 
