@@ -1,0 +1,10 @@
+C:\GitHub\mentoring\practice\WCF Service\WCFClient\bin\Debug\WCFClient.exe.config
+C:\GitHub\mentoring\practice\WCF Service\WCFClient\bin\Debug\WCFClient.exe
+C:\GitHub\mentoring\practice\WCF Service\WCFClient\bin\Debug\WCFClient.pdb
+C:\GitHub\mentoring\practice\WCF Service\WCFClient\bin\Debug\System.Net.Http.Formatting.dll
+C:\GitHub\mentoring\practice\WCF Service\WCFClient\bin\Debug\Newtonsoft.Json.dll
+C:\GitHub\mentoring\practice\WCF Service\WCFClient\bin\Debug\System.Net.Http.Formatting.xml
+C:\GitHub\mentoring\practice\WCF Service\WCFClient\obj\Debug\WCFClient.exe
+C:\GitHub\mentoring\practice\WCF Service\WCFClient\obj\Debug\WCFClient.pdb
+C:\GitHub\mentoring\practice\WCF Service\WCFClient\bin\Debug\Newtonsoft.Json.xml
+C:\GitHub\Mentoring\practice\WCF Service\WCFClient\obj\Debug\WCFClient.csprojResolveAssemblyReference.cache

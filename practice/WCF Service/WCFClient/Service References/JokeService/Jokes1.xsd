@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://kiedwm417488/Jokes?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCF_Service" />
+  <xs:element name="GetJoke">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetJokeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WCF_Service" minOccurs="0" name="GetJokeResult" nillable="true" type="q1:Joke" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ee4a6ba4-ff44-4d19-a926-982d0185aa97" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://kiedwm417488/Jokes" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Jokes.xsd" MetadataType="Schema" ID="c658f95b-642c-436a-9564-7c16df1b12f3" SourceId="1" SourceUrl="http://kiedwm417488/Jokes?xsd=xsd3" />
+    <MetadataFile FileName="JokeService.wsdl" MetadataType="Wsdl" ID="5efdb0db-c430-4979-b939-c12f31781df9" SourceId="1" SourceUrl="http://kiedwm417488/Jokes?wsdl" />
+    <MetadataFile FileName="Jokes.disco" MetadataType="Disco" ID="d2f1199f-2534-4aa9-9a32-552c0905fdc8" SourceId="1" SourceUrl="http://kiedwm417488/Jokes?disco" />
+    <MetadataFile FileName="Jokes1.xsd" MetadataType="Schema" ID="20fd8618-b880-4f45-bcc2-c6f49ab43efa" SourceId="1" SourceUrl="http://kiedwm417488/Jokes?xsd=xsd0" />
+    <MetadataFile FileName="Jokes2.xsd" MetadataType="Schema" ID="ac375c08-f87b-4b93-8c40-c37ac709bafe" SourceId="1" SourceUrl="http://kiedwm417488/Jokes?xsd=xsd1" />
+    <MetadataFile FileName="Jokes3.xsd" MetadataType="Schema" ID="1682a9c5-8d2f-4857-a414-b3a302a94e4f" SourceId="1" SourceUrl="http://kiedwm417488/Jokes?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

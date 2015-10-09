@@ -1,0 +1,9 @@
+C:\GitHub\mentoring\practice\WCF Service\WCF Service\bin\Debug\WCF Service.exe.config
+C:\GitHub\mentoring\practice\WCF Service\WCF Service\bin\Debug\WCF Service.exe
+C:\GitHub\mentoring\practice\WCF Service\WCF Service\bin\Debug\WCF Service.pdb
+C:\GitHub\mentoring\practice\WCF Service\WCF Service\bin\Debug\Newtonsoft.Json.dll
+C:\GitHub\mentoring\practice\WCF Service\WCF Service\bin\Debug\System.Net.Http.Formatting.dll
+C:\GitHub\mentoring\practice\WCF Service\WCF Service\bin\Debug\Newtonsoft.Json.xml
+C:\GitHub\mentoring\practice\WCF Service\WCF Service\bin\Debug\System.Net.Http.Formatting.xml
+C:\GitHub\mentoring\practice\WCF Service\WCF Service\obj\Debug\WCF Service.exe
+C:\GitHub\mentoring\practice\WCF Service\WCF Service\obj\Debug\WCF Service.pdb
